@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <meta http-eqiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Echonest Related Artists</title>
+</head>
+<body>
+  <div class="spotify-uri-input" onsubmit="similarArtists.echoNestAjax(); return false;">
+    <form role="form">
+      <label for="spotify-uri" name="spotify-uri-input">Spotify URI</label>
+      <input type="text" id="spotify-uri-input">
+      <input type="submit">
+    </form>
+  </div>
+  <div class="result-list-container">
+    <p>Put a valid Spotify URI in the box above and get back the top most-similar artists, according to the EchoNest.</p>
+    <div class="result-list" id="result-list">
+    </div>
+  </div>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
